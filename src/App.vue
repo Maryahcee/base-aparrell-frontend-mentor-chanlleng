@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <div class="card">
+    <Logo />
+    <Welcome />
+    <LandingText />
+    <email-btn />
+ </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Logo from './components/Logo.vue'
+import Welcome from './components/Welcome.vue'
+import LandingText from './components/LandingText.vue'
+import EmailBtn from './components/EmailBtn.vue'
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+  Logo,
+  Welcome,
+  LandingText,
+    EmailBtn,
   }
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+  width: 500px;
+  height: 500px;
+ background-color: bisque;
+ border: 1px solid #BEBEBE;
+ justify-content: center;
 }
 </style>
