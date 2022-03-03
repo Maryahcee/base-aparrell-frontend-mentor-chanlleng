@@ -1,9 +1,14 @@
 <template>
- <div class="card">
+ <div class="wrapper">
+   <div class="card">
     <Logo />
     <Welcome />
     <LandingText />
-    <email-btn />
+    <form />
+ </div>
+ <div>
+   <hero-cover-img />
+ </div>
  </div>
 </template>
 
@@ -11,7 +16,8 @@
 import Logo from './components/Logo.vue'
 import Welcome from './components/Welcome.vue'
 import LandingText from './components/LandingText.vue'
-import EmailBtn from './components/EmailBtn.vue'
+import Form from './components/Form.vue'
+import HeroCoverImg from './components/HeroCoverImg.vue'
 export default {
   name: 'App',
 
@@ -19,7 +25,8 @@ export default {
   Logo,
   Welcome,
   LandingText,
-    EmailBtn,
+    Form,
+    HeroCoverImg,
   }
 
 }
@@ -32,11 +39,20 @@ export default {
     box-sizing: border-box;
 }
 
-.card{
-  width: 500px;
+.wrapper {
+  display: flex;
   height: 500px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 10px 0;
+}
+
+.card{
+ height: 500px;
  background-color: bisque;
  border: 1px solid #BEBEBE;
  justify-content: center;
+ padding: 25px;
 }
 </style>
