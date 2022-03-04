@@ -4,7 +4,7 @@
     <Logo />
     <Welcome />
     <LandingText />
-    <form />
+    <email-form />
  </div>
  <div>
    <hero-cover-img />
@@ -16,8 +16,8 @@
 import Logo from './components/Logo.vue'
 import Welcome from './components/Welcome.vue'
 import LandingText from './components/LandingText.vue'
-import Form from './components/Form.vue'
 import HeroCoverImg from './components/HeroCoverImg.vue'
+import EmailForm from './components/EmailForm.vue'
 export default {
   name: 'App',
 
@@ -25,8 +25,8 @@ export default {
   Logo,
   Welcome,
   LandingText,
-    Form,
     HeroCoverImg,
+    EmailForm,
   }
 
 }
