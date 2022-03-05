@@ -32,7 +32,7 @@ export default {
 <style>
 .email {
     position: relative;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
     height: 3rem;
 }
 
