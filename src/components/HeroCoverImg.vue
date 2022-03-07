@@ -1,6 +1,6 @@
 <template>
-  <div>
-  <img :src="HeroCoverImg">
+  <div class="image-container">
+  <img :src="HeroCoverImg" class="hero-img">
   </div>
 </template>
 
@@ -20,5 +20,13 @@ data: function() {
 </script>
 
 <style>
+.image-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hero-img {
+  height: 501px;
+}
 
 </style>
