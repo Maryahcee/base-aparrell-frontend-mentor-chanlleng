@@ -30,21 +30,29 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+*{
+    --soft-red: hsl(0, 93%, 68%);
+    --desaturated-red: hsl(0, 36%, 70%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
 .email {
     position: relative;
-    margin-top: 5rem;
-    height: 3rem;
+    margin-top: 3rem;
+    height: 2.5rem;
+    width: 50rem;
 }
 
 input {
-    padding: 13px;
-    height: 28px;
     border-radius: 2rem;
-    border: 1px solid var(--red-light);
-    color: var(--red-light);
+    border: 1px solid var(--desaturated-red);
+    color: var(--desaturated-red);
     padding: 0.2rem 1.5rem;
     height: 2.4rem;
-    width: 50%;
+    width: 25rem;
+    font-family: "Josefin Sans";
+    font-weight: 300;
 }
 
 input::placeholder {
@@ -56,7 +64,7 @@ button:focus {
   outline: none;
 }
 
-button {
+.click {
  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
  border: 0;
  border-radius: 2rem;
@@ -65,7 +73,7 @@ button {
  top: 0;
  right: 50%;
  width: 5rem;
- height: 80%;
+ height: 100%;
  cursor: pointer;
  border-style: none;
 }
