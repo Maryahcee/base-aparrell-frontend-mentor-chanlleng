@@ -11,5 +11,12 @@ export default {
 </script>
 
 <style>
+p {
+  font-family: 'Josephin Sans';
+  color: hsl(0, 36%, 70%);
+  line-height: 1.3;
+  font-size: 16px;
+  font-style: italic;
+}
 
 </style>
