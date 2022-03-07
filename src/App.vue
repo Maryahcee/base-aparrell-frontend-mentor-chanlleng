@@ -6,9 +6,11 @@
     <LandingText />
     <email-form />
  </div>
+
  <div>
    <hero-cover-img />
  </div>
+
  </div>
 </template>
 
@@ -40,19 +42,23 @@ export default {
 }
 
 .wrapper {
+  font-size: 16px;
+  background: gainsboro;
   display: flex;
-  height: 500px;
-  overflow: hidden;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px 10px 0;
+  width: 1000px;
+  height: 500px;
+  margin: 10rem 5rem;
+  box-shadow:0 0 10px rgba(52, 51, 51, 0.8); 
+  overflow: hidden;
 }
 
 .card{
- height: 500px;
- background-color: bisque;
- border: 1px solid #BEBEBE;
- justify-content: center;
- padding: 25px;
+  background-image: url(./assets/images/bg-pattern-desktop.svg),linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  min-width: 55%;
 }
 </style>
