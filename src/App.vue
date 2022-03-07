@@ -10,7 +10,6 @@
  <div>
    <hero-cover-img />
  </div>
-
  </div>
 </template>
 
