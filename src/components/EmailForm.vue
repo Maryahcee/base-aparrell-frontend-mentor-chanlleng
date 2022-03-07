@@ -68,12 +68,12 @@ button:focus {
  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
  border: 0;
  border-radius: 2rem;
- box-shadow: 0 5px 20px 3px hsl(0, 80%, 86%);
+ box-shadow: 0 5px 15px 4px hsl(0, 80%, 86%);
  position: absolute;
  top: 0;
  right: 50%;
  width: 5rem;
- height: 100%;
+ height: 98%;
  cursor: pointer;
  border-style: none;
 }
