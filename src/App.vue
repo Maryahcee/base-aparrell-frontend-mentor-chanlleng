@@ -1,6 +1,9 @@
 <template>
- <div class="wrapper">
+ <mobile-view id="mobile-view"/>
+ <div class="wrapper" id="desktop-view">
+   
    <div class="card">
+    
     <Logo />
     <Welcome />
     <LandingText />
@@ -10,6 +13,7 @@
  <div>
    <hero-cover-img />
  </div>
+ 
  </div>
 </template>
 
@@ -19,6 +23,7 @@ import Welcome from './components/Welcome.vue'
 import LandingText from './components/LandingText.vue'
 import HeroCoverImg from './components/HeroCoverImg.vue'
 import EmailForm from './components/EmailForm.vue'
+import MobileView from './components/MobileView.vue'
 export default {
   name: 'App',
 
@@ -26,10 +31,11 @@ export default {
   Logo,
   Welcome,
   LandingText,
-    HeroCoverImg,
-    EmailForm,
-  }
-
+  HeroCoverImg,
+  EmailForm,
+    MobileView,
+  },
+  
 }
 </script>
 
@@ -60,4 +66,19 @@ export default {
   padding: 5rem;
   min-width: 55%;
 }
+#mobile-view {
+  display:none;
+}
+@media screen and (max-width: 1096px){
+  
+  #desktop-view {
+  display: none;
+}
+#mobile-view {
+display: flex;
+flex-direction: column;
+}
+}
+
+
 </style>
