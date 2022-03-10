@@ -26,7 +26,7 @@ data: function() {
 }
 
 .hero-img {
-  height: 501px;
+  height: 555px;
 }
 
 </style>
