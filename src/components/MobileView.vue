@@ -20,9 +20,11 @@
         <div class="mobile-padding">
             <form  id="mobile-address">
                 <input class="mobile-input" type="email" placeholder="Email Address">
-                <button class="mobile-btn">
+               <div class="btn-padding">
+                    <button class="mobile-btn">
                     <img class="mobile-arrow" :src="arrow" alt="">
                 </button>
+               </div>
             </form>
         </div>
   </div>
@@ -125,23 +127,31 @@ return{
     font-weight: 300;
 }
 
+.mobile-padding {
+    padding: 20px 60px;
+    position: relative;
+}
+
 .mobile-btn {
  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
  border: 0;
  border-radius: 2rem;
  box-shadow: 0 5px 15px 4px hsl(0, 80%, 86%);
  position: absolute;
- top: 22%;
- right: 15%;
+ top: 24%;
+ right: 100%;
+ left: 60%;
  width: 5rem;
  height: 3rem;
  cursor: pointer;
  border-style: none;
- transition:0.4s ;
+ 
 }
 
-.mobile-padding {
-    padding: 20px 60px;
-    position: relative;
+.mobile-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 </style>
