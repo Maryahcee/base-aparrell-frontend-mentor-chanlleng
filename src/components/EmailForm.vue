@@ -1,11 +1,20 @@
 <template>
 <div class="email">
 
-   <form action="">
-          <input v-model="address" placeholder="Email Adress">
-      <button class="click">
+   <form action="" @submit.prevent="submitForm">
+          <span v-if="!validEmail(address)">
+            <img class="icon-error" src="../assets/images/icon-error.svg" alt="">
+          </span>
+
+          <input class="input-info" v-model="address"  type="email" placeholder="Email Adress" required >
+
+      <button @click="submitForm" class="click">
           <img :src="icon"  class="arrow">
       </button>
+      <div>
+        <span class="error-message"  v-if="!validEmail(address) ">
+          {{error}} </span>
+      </div>
    </form>
 </div>
 </template>
@@ -24,7 +33,21 @@ export default {
     return{
       address:'',
      icon,
+     error: 'Please provide a valid email address',
     }
+  },
+  methods: {
+    submitForm() {
+      console.log()
+    },
+    validEmail: function (email) {
+      if (email == ""){
+        return true;
+      }
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    },
+  
   }
 }
 </script>
@@ -37,14 +60,15 @@ export default {
     --desaturated-red: hsl(0, 36%, 70%);
     --Dark-Grayish-Red: hsl(0, 6%, 24%);
 }
+
 .email {
     position: relative;
-    margin-top: 3rem;
+    margin-top: 2rem;
     height: 2.5rem;
     width: 50rem;
 }
 
-input {
+.input-info {
     border-radius: 2rem;
     border: 1px solid var(--desaturated-red);
     color: var(--desaturated-red);
@@ -76,12 +100,32 @@ button:focus {
  height: 98%;
  cursor: pointer;
  border-style: none;
+ transition:0.4s ;
 }
 
+.click:hover {
+  background: linear-gradient(45deg, hsl(0, 70%, 67%), hsl(0, 77%, 78%)); /* Green */
+
+}
 .arrow {
     width: 10px;
     justify-content: center;
     align-content: center;
     margin: 2px 0;
 }
+
+.error-message {
+  color: hsl(0, 93%, 68%);
+  font-style: italic;
+  padding: 20px;
+  margin-top: 1rem ;
+}
+
+.icon-error {
+  position: absolute;
+  padding: 6px;
+  margin-left: 17rem;
+}
+
+
 </style>
