@@ -69,7 +69,7 @@ export default {
 #mobile-view {
   display:none;
 }
-@media screen and (max-width: 1096px){
+@media screen and (max-width: 768px){
   
   #desktop-view {
   display: none;
