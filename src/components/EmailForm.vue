@@ -62,21 +62,21 @@ export default {
 }
 
 .email {
-    position: relative;
-    margin-top: 2rem;
-    height: 2.5rem;
-    width: 50rem;
+  position: relative;
+  margin-top: 2rem;
+  height: 2.5rem;
+  width: 50rem;
 }
 
 .input-info {
-    border-radius: 2rem;
-    border: 1px solid var(--desaturated-red);
-    color: var(--desaturated-red);
-    padding: 0.2rem 1.5rem;
-    height: 2.4rem;
-    width: 25rem;
-    font-family: "Josefin Sans";
-    font-weight: 300;
+  border-radius: 2rem;
+  border: 1px solid var(--desaturated-red);
+  color: var(--desaturated-red);
+  padding: 0.2rem 1.5rem;
+  height: 2.4rem;
+  width: 25rem;
+  font-family: "Josefin Sans";
+  font-weight: 300;
 }
 
 input::placeholder {
@@ -89,18 +89,18 @@ button:focus {
 }
 
 .click {
- background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
- border: 0;
- border-radius: 2rem;
- box-shadow: 0 5px 15px 4px hsl(0, 80%, 86%);
- position: absolute;
- top: 0;
- right: 50%;
- width: 5rem;
- height: 98%;
- cursor: pointer;
- border-style: none;
- transition:0.4s ;
+  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: 0;
+  border-radius: 2rem;
+  box-shadow: 0 5px 15px 4px hsl(0, 80%, 86%);
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 5rem;
+  height: 98%;
+  cursor: pointer;
+  border-style: none;
+  transition:0.4s ;
 }
 
 .click:hover {
@@ -108,10 +108,10 @@ button:focus {
 
 }
 .arrow {
-    width: 10px;
-    justify-content: center;
-    align-content: center;
-    margin: 2px 0;
+   width: 10px;
+   justify-content: center;
+   align-content: center;
+   margin: 2px 0;
 }
 
 .error-message {
