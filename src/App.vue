@@ -85,11 +85,13 @@ export default {
   top: 21%;
   right: 15%;
 }
+
 .mobile-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #btn-padding {
     display: flex;
     align-items: center;
