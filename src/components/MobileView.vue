@@ -20,8 +20,8 @@
         <div class="mobile-padding">
             <form  id="mobile-address">
                <input class="mobile-input" type="email" placeholder="Email Address">
-               <div>
-                    <button class="mobile-btn">
+               <div >
+                    <button id="btn-small-flex" class="mobile-btn">
                         <img class="mobile-arrow" :src="arrow" alt="">
                     </button>
                </div>
@@ -152,5 +152,17 @@ return{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+#btn-small-flex{
+   margin: 0 auto;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
