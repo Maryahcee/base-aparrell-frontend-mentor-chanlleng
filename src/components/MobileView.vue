@@ -31,7 +31,7 @@
                </div>
                <div>
                  <span class="error-message"  v-if="!validEmail(address) ">
-                     {{error}} </span>
+                     {{ error }} </span>
       </div>
             </form>
         </div>
@@ -170,6 +170,10 @@ methods: {
  
 }
 
+.mobile-btn:hover {
+    background: linear-gradient(45deg, hsl(0, 70%, 67%), hsl(0, 77%, 78%));
+}
+
 #btn-small-flex{
    margin: 0 auto;
    display: flex;
@@ -182,9 +186,17 @@ methods: {
     justify-content: center;
     align-items: center;
 }
+
 .icon-error {
   position: absolute;
   padding: 6px;
   margin-left: 17rem;
+}
+
+.error-message {
+  color: hsl(0, 93%, 68%);
+  font-style: italic;
+  padding: 20px;
+  margin-top: 1rem ;
 }
 </style>
