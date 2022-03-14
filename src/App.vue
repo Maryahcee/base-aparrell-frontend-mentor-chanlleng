@@ -84,14 +84,11 @@ export default {
   position: absolute;
   top: 21%;
   right: 15%;
-
 }
 .mobile-arrow {
-    position: absolute;
-    top: 25%;
-    right: 50%;
-    bottom: 50%;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #btn-padding {
     display: flex;
@@ -99,7 +96,4 @@ export default {
     justify-content: center;
 }
 }
-
-
-
 </style>
