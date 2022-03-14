@@ -83,7 +83,7 @@ export default {
 .mobile-btn{
   position: absolute;
   top: 21%;
-  right: 0;
+  right: 15%;
 
 }
 .mobile-arrow {
