@@ -18,13 +18,21 @@
             </p>
         </div>
         <div class="mobile-padding">
-            <form  id="mobile-address">
-               <input class="mobile-input" type="email" placeholder="Email Address">
+            <form  id="mobile-address" @submit.prevent="submitForm">
+                 <span v-if="!validEmail(address)">
+                     <img class="icon-error" src="../assets/images/icon-error.svg" alt="">
+                 </span>
+
+               <input class="mobile-input" type="email" placeholder="Email Address" required>
                <div >
                     <button id="btn-small-flex" class="mobile-btn">
                         <img class="mobile-arrow" :src="arrow" alt="">
                     </button>
                </div>
+               <div>
+                 <span class="error-message"  v-if="!validEmail(address) ">
+                     {{error}} </span>
+      </div>
             </form>
         </div>
   </div>
@@ -43,9 +51,24 @@ return{
     Logo,
     mobileImg,
     arrow,
+    address:'',
+    error: 'Please provide a valid email address',
+
 }
 },
-
+methods: {
+    submitForm() {
+      console.log()
+    },
+    validEmail: function (email) {
+      if (email == ""){
+        return true;
+      }
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    },
+  
+  }
 }
 </script>
 
@@ -158,5 +181,10 @@ return{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.icon-error {
+  position: absolute;
+  padding: 6px;
+  margin-left: 17rem;
 }
 </style>
