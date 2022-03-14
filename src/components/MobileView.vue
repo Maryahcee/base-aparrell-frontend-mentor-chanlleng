@@ -137,7 +137,7 @@ return{
     background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border-radius: 2rem;
     box-shadow: 0 5px 20px 5px hsl(0, 80%, 86%);
-    width: 5rem;
+    width: 4rem;
     height: 3rem;
     cursor: pointer;
     border-style: none;
@@ -148,11 +148,9 @@ return{
 }
 
 .mobile-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    
 }
+
 #btn-small-flex{
    margin: 0 auto;
    display: flex;
