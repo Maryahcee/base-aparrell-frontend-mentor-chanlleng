@@ -104,7 +104,7 @@ button:focus {
 }
 
 .click:hover {
-  background: linear-gradient(45deg, hsl(0, 70%, 67%), hsl(0, 77%, 78%)); /* Green */
+  background: linear-gradient(45deg, hsl(0, 70%, 67%), hsl(0, 77%, 78%)); 
 
 }
 .arrow {
