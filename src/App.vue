@@ -1,20 +1,18 @@
 <template>
- <mobile-view id="mobile-view"/>
- <div class="wrapper" id="desktop-view">
-   
-   <div class="card">
-    
-    <Logo />
-    <Welcome />
-    <LandingText />
-    <email-form />
- </div>
+    <mobile-view id="mobile-view"/>
+    <div class="wrapper" id="desktop-view">
+    <div class="card">
+      <Logo />
+      <Welcome />
+      <LandingText />
+      <email-form />
+  </div>
 
- <div>
-   <hero-cover-img />
- </div>
- 
- </div>
+  <div>
+    <hero-cover-img />
+  </div>
+  
+  </div>
 </template>
 
 <script>
@@ -28,11 +26,11 @@ export default {
   name: 'App',
 
   components: {
-  Logo,
-  Welcome,
-  LandingText,
-  HeroCoverImg,
-  EmailForm,
+    Logo,
+    Welcome,
+    LandingText,
+    HeroCoverImg,
+    EmailForm,
     MobileView,
   },
   
@@ -66,19 +64,42 @@ export default {
   padding: 5rem;
   min-width: 55%;
 }
+
 #mobile-view {
   display:none;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 600px){
   
   #desktop-view {
-  display: none;
+    display: none;
 }
 #mobile-view {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobile-btn{
+  position: absolute;
+  top: 21%;
+  right: 0;
+
+}
+.mobile-arrow {
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+}
+#btn-padding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 }
+
 
 
 </style>
