@@ -11,8 +11,13 @@
   <div>
     <hero-cover-img />
   </div>
-  
   </div>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#" > Mary Njoroge</a>.
+      </div>
+  </footer>
 </template>
 
 <script>
@@ -67,6 +72,17 @@ export default {
 
 #mobile-view {
   display:none;
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (max-width: 600px){
