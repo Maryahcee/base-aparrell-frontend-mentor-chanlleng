@@ -9,21 +9,21 @@
         <div class="mobile-content">
             <h1 class="mobile-header">
                 <span class="header-coloured">We're <br> </span>
-        <span class="dark-color middle-header"> Coming <br> </span>
+                <span class="dark-color middle-header"> Coming <br> </span>
         <span class="dark-color"> Soon</span> 
             </h1>
             <p class="landing-mobile"> 
-            Hello Fellow Shoppers! We're currrently building oour new fashion store.
-        Add your email below to stay up-to-date with announcements and our launch deals.
+                Hello Fellow Shoppers! We're currrently building oour new fashion store.
+                Add your email below to stay up-to-date with announcements and our launch deals.
             </p>
         </div>
         <div class="mobile-padding">
             <form  id="mobile-address">
-                <input class="mobile-input" type="email" placeholder="Email Address">
-               <div class="btn-padding">
+               <input class="mobile-input" type="email" placeholder="Email Address">
+               <div>
                     <button class="mobile-btn">
-                    <img class="mobile-arrow" :src="arrow" alt="">
-                </button>
+                        <img class="mobile-arrow" :src="arrow" alt="">
+                    </button>
                </div>
             </form>
         </div>
@@ -57,6 +57,7 @@ return{
     padding: 0;
     box-sizing: border-box;
 }
+
 #mobile-card {
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     display: flex;
@@ -81,10 +82,10 @@ return{
 }
 
 .mobile-content {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .mobile-header {
@@ -96,9 +97,9 @@ return{
 }
 
 .header-coloured{
-  color: hsl(0, 36%, 70%);
-  line-height: 1.3;
-  font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.3;
+    font-weight: 300;
 }
 
 
@@ -122,7 +123,7 @@ return{
     color: var(--desaturated-red);
     padding: 0.1rem 1.5rem;
     height: 3rem;
-    width: 20rem;
+    width: 18rem;
     font-family: "Josefin Sans";
     font-weight: 300;
 }
@@ -133,18 +134,16 @@ return{
 }
 
 .mobile-btn {
- background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
- border: 0;
- border-radius: 2rem;
- box-shadow: 0 5px 15px 4px hsl(0, 80%, 86%);
- position: absolute;
- top: 24%;
- right: 100%;
- left: 60%;
- width: 5rem;
- height: 3rem;
- cursor: pointer;
- border-style: none;
+    background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 2rem;
+    box-shadow: 0 5px 20px 5px hsl(0, 80%, 86%);
+    width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  
 }
 
@@ -152,6 +151,6 @@ return{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 }
 </style>
