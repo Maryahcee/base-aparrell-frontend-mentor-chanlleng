@@ -147,10 +147,6 @@ return{
  
 }
 
-.mobile-arrow {
-    
-}
-
 #btn-small-flex{
    margin: 0 auto;
    display: flex;
